@@ -1,91 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smith & Associates - Your Trusted Legal Advisors</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="Smith & Associates Logo">
-                <h1>Smith & Associates</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#practice-areas">Practice Areas</a></li>
-                <li><a href="#attorneys">Attorneys</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Light gray background */
+}
 
-    <section id="home">
-        <div class="hero">
-            <h2>Your Trusted Legal Advisors</h2>
-            <p>With over 20 years of experience, we provide expert legal counsel for your needs.</p>
-        </div>
-    </section>
+header {
+    background-color: #4285f4; /* Google Blue */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
 
-    <section id="practice-areas">
-        <h2>Our Practice Areas</h2>
-        <ul>
-            <li>Criminal Defense</li>
-            <li>Family Law</li>
-            <li>Real Estate</li>
-            <li>Business Law</li>
-            <li>Personal Injury</li>
-            <!-- Add more practice areas as needed -->
-        </ul>
-    </section>
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Rounded corners for all sections */
+}
 
-    <section id="attorneys">
-        <h2>Our Attorneys</h2>
-        <div class="attorney">
-            <img src="attorney1.jpg" alt="Attorney John Doe">
-            <h3>John Doe</h3>
-            <p>Credentials: JD, LLM</p>
-            <p>Areas of Expertise: Criminal Defense</p>
-            <p>Contact: john.doe@example.com</p>
-        </div>
-        <!-- Add more attorney profiles as needed -->
-    </section>
+ul {
+    list-style-type: square;
+}
 
-    <section id="testimonials">
-        <h2>Client Testimonials</h2>
-        <div class="testimonial">
-            <p>"Smith & Associates helped me win my case with professionalism and dedication."</p>
-            <p>- Jane Smith</p>
-        </div>
-        <!-- Add more client testimonials as needed -->
-    </section>
+.attorney, .testimonial {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners for attorney and testimonial sections */
+}
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-form">
-            <form action="contact.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+form {
+    display: grid;
+    gap: 10px;
+}
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+/* Buttons */
+.contact-button {
+    background-color: #0f9d58; /* Google Green */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+}
 
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit" class="contact-button">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Smith & Associates. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+.contact-button:hover {
+    background-color: #0a7d41; /* Darker green on hover */
+}
